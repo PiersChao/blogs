@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import Head from 'next/head'
 import Header from '../components/Header'
+import Author from '../components/Author'
+import Advert from '../components/Advert'
+import Footer from '../components/Footer'
 import {Row, Col, List} from 'antd'
 import {CarryOutOutlined, FolderOutlined, FireOutlined} from '@ant-design/icons'
-import '../public/pages/index.css'
 const Home = () => {
   const [myList, setMyList] = useState(
     [
@@ -40,10 +42,11 @@ const Home = () => {
           />
         </Col>
         <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>
-          右侧
+          <Author/>
+          <Advert/>
         </Col>
       </Row>
-
+      <Footer/>
     </div>
   )
 }

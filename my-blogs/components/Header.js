@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col, Menu } from 'antd'
 import {HomeOutlined, YoutubeOutlined, SmileOutlined} from '@ant-design/icons'
-import '../public/components/header.css'
+import '../public/style/components/header.css'
 const Header  = () => {
   return (
     <div className="header">
